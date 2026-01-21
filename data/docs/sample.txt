@@ -1,0 +1,12 @@
+Enterprise RAG Chatbot is an internal AI assistant built for companies.
+
+It helps employees ask questions about internal documents such as:
+- company policies
+- technical documentation
+- onboarding guides
+
+The chatbot uses Retrieval Augmented Generation (RAG).
+This means it first searches relevant documents and then uses an AI model to answer questions based only on those documents.
+
+This chatbot is not trained on company data.
+It only uses the documents provided to it at runtime.
