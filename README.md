@@ -1,32 +1,32 @@
 
-# Enterprise RAG Chatbot 🤖
+# Enterprise RAG Chatbot
 
 An enterprise-grade conversational chatbot built using **Retrieval Augmented Generation (RAG)**.  
 The system provides **document-grounded, non-hallucinating answers** with session-based conversational memory.
 
 ---
 
-## ✨ Key Features
+# Key Features
 
-- 🔍 **Retrieval Augmented Generation (RAG)**
+-  **Retrieval Augmented Generation (RAG)**
   - Answers are generated strictly from provided documents
   - No hallucinated responses
-- 🧠 **Session-based conversational memory**
+- **Session-based conversational memory**
   - Supports follow-up questions using `session_id`
-- ⚡ **FastAPI backend**
+- **FastAPI backend**
   - Clean, modular, API-first design
-- 💬 **Streamlit chat UI**
+- **Streamlit chat UI**
   - Real-time chat interface
   - Automatic session handling
-- 🧱 **Vector search using FAISS**
+- **Vector search using FAISS**
   - Efficient similarity search over document embeddings
-- 🔐 **Secure by design**
+- **Secure by design**
   - Environment variables for secrets
   - `.env` and `.venv` excluded from Git
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 
@@ -60,7 +60,7 @@ Grounded Answer
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 
@@ -93,7 +93,7 @@ enterprise-rag-chatbot/
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 - **Backend:** FastAPI
 - **Frontend:** Streamlit
@@ -104,21 +104,21 @@ enterprise-rag-chatbot/
 
 ---
 
-## ▶️ How to Run Locally
+## How to Run Locally
 
-### 1️⃣ Create virtual environment
+### Create virtual environment
 ```bash
 python3.11 -m venv .venv
 source .venv/bin/activate
 ````
 
-### 2️⃣ Install dependencies
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Configure environment variables
+### Configure environment variables
 
 Create a `.env` file:
 
@@ -126,7 +126,7 @@ Create a `.env` file:
 OPENAI_API_KEY=your_api_key_here
 ```
 
-### 4️⃣ Start backend
+### Start backend
 
 ```bash
 uvicorn app.api:app
@@ -138,7 +138,7 @@ Backend runs at:
 http://127.0.0.1:8000
 ```
 
-### 5️⃣ Start Streamlit UI
+### Start Streamlit UI
 
 ```bash
 streamlit run ui/chat_ui.py
@@ -152,7 +152,7 @@ http://localhost:8501
 
 ---
 
-## 🧪 Example Usage
+##  Example Usage
 
 1. Ask:
 
@@ -170,7 +170,7 @@ The chatbot:
 
 ---
 
-## 🧠 Design Highlights (Interview-Ready)
+## Design Highlights (Interview-Ready)
 
 * RAG implemented **from scratch** (no LangChain dependency)
 * Strict grounding enforcement (`"I don't know based on provided documents"`)
@@ -184,7 +184,7 @@ The chatbot:
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 * Document chunking & metadata filtering
 * Conversation summarization memory
@@ -194,7 +194,7 @@ The chatbot:
 
 ---
 
-## 📌 Disclaimer
+## Disclaimer
 
 This project is for educational and portfolio purposes.
 No proprietary or confidential data is included.
