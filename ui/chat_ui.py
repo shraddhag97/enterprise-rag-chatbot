@@ -6,7 +6,7 @@ API_URL = "http://127.0.0.1:8000/chat"
 
 st.set_page_config(page_title="Enterprise RAG Chatbot", page_icon="🤖")
 
-st.title("🤖 Enterprise RAG Chatbot")
+st.title("Enterprise RAG Chatbot")
 
 # Create a session_id once per browser session
 if "session_id" not in st.session_state:
@@ -43,7 +43,7 @@ if user_input:
         response.raise_for_status()
         answer = response.json()["answer"]
     except Exception as e:
-        answer = f"❌ Error: {e}"
+        answer = f"Error: {e}"
 
     # Show bot response
     st.session_state.messages.append(
